@@ -23,4 +23,4 @@ jobs:
     - name: Clean gradle
       run: ./gradlew clean
     - name: Build with Gradle
-      run: ./gradlew connectedAndroidTest --warning-mode=all
+      run: ./gradlew connectedAndroidTest --warning-mode=all --stacktrace
