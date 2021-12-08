@@ -20,5 +20,7 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
+    - name: Clean gradle
+      run: ./gradlew clean
     - name: Build with Gradle
       run: ./gradlew connectedAndroidTest --warning-mode=all
