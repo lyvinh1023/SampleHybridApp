@@ -25,7 +25,7 @@ jobs:
     - name: Run espresso test
       uses: reactivecircus/android-emulator-runner@v2
       with:
-          api-level: 28
+          api-level: 30
           target: default
           arch: x86
           profile: Nexus 6
