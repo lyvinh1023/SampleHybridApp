@@ -25,8 +25,8 @@ jobs:
     - name: Run espresso test
       uses: reactivecircus/android-emulator-runner@v2
       with:
-          api-level: 30
+          api-level: 28
           target: default
-          arch: x86_64
+          arch: x86
           profile: Nexus 6
           script: ./gradlew connectedAndroidTest --warning-mode=all --stacktrace
