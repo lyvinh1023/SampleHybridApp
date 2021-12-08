@@ -22,5 +22,5 @@ jobs:
       run: chmod +x gradlew
     - name: Clean gradle
       run: ./gradlew clean
-    - name: Build with Gradle
+    - name: Run e2e
       run: ./gradlew connectedAndroidTest --warning-mode=all --stacktrace
