@@ -31,5 +31,6 @@ jobs:
           api-level: ${{ matrix.api-level }}
           target: ${{ matrix.target }}
           arch: x86_64
+          ndk: 21.4.7075529
           profile: Nexus 6
           script: ./gradlew connectedAndroidTest --stacktrace
