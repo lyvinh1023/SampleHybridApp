@@ -9,16 +9,18 @@
 
  gradlew assembleDebug assembleDebugAndroidTest
 
-- Use adb shell
+- Use adb shell to run test on Emulator
 
  adb shell am instrument -w -m -e debug false com.example.samplehybridapp.test/androidx.test.runner.AndroidJUnitRunner
 
-- Use gradlew
-
- gradlew connectedAndroidTest
+- Use gradlew to run test on Emulator
 
  gradlew connectedDebugAndroidTest
  
+- List all devices:
+
+gcloud firebase test android models list
+
  - Use gcloud firebase
 
 gcloud firebase test android run --type instrumentation --app app/build/outputs/apk/debug/app-debug.apk --test app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk --device model=Pixel2,version=30
