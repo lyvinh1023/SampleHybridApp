@@ -1,4 +1,4 @@
-name: Run Espresso Instrument Tests
+name: Espresso Instrument Tests
 
 on:
   # push:
