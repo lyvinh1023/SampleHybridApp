@@ -65,8 +65,13 @@ workflows:
               system-image:
                 - system-images;android-30;google_apis;x86
                 - system-images;android-28;google_apis;x86
-
           name: android-test-<<matrix.system-image>>
+          filters:
+            branches:
+              only: master # Commits to main branch
       - release-build:
           requires:
             - android-test-all
+          filters:
+            branches:
+              only: master # Commits to main branch
