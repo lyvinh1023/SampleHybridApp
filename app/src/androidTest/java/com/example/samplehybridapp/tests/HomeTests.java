@@ -4,6 +4,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import com.example.samplehybridapp.R;
 import com.example.samplehybridapp.pages.HomePage;
+import com.example.samplehybridapp.testCategories.SmokeTest;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,6 +14,7 @@ public class HomeTests extends BaseTests{
 
     HomePage homePage = new HomePage();
 
+    @SmokeTest
     @Test
     public void navigationBarTest() {
         homePage.checkViewDisplay(R.id.navigation_home);
@@ -20,6 +22,8 @@ public class HomeTests extends BaseTests{
         homePage.checkViewDisplay(R.id.navigation_notifications);
     }
 
+
+    @SmokeTest
     @Test
     public void loginWebViewTest() throws InterruptedException {
         homePage.loginWebView("test", "password");
