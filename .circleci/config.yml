@@ -24,7 +24,7 @@ jobs:
           name: Grant execute permission for gradlew
           command: sudo chmod +x ./gradlew
       - android/start-emulator-and-run-tests:
-          test-command: ./gradlew connectedDebugAndroidTest
+          test-command: ./gradlew connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.example.samplehybridapp.testSuites.RegressionTestSuite
           system-image: << parameters.system-image >>
       - run:
           name: Save test results
