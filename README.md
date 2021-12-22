@@ -23,6 +23,7 @@
 - Run test by category (e.g SmokeTest only)
 
 > adb shell am instrument -w -m -e debug false -e class 'com.example.samplehybridapp.testSuites.SmokeTestSuite' com.example.samplehybridapp.test/androidx.test.runner.AndroidJUnitRunner
+
 > adb shell am instrument -w -m -e debug false -e annotation com.example.samplehybridapp.annotations.SmokeAnnotation com.example.samplehybridapp.test/androidx.test.runner.AndroidJUnitRunner
 
 ## Run tests with gradlew
@@ -34,6 +35,7 @@
 - Run test by category (e.g SmokeTest only)
 
 > gradlew connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.example.samplehybridapp.testSuites.SmokeTestSuite
+
 > gradlew connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.annotation=com.example.samplehybridapp.annotations.SmokeAnnotation
 
 ## Run tests with gcloud firebase
