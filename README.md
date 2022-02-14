@@ -4,7 +4,7 @@
  - Apply Android CI to build project and run e2e instrument test
  - Run test on emulator and Firebase Lab
 
-# How to run instrument test
+# How to run instrument tests
 
 ## Build APP and TEST apk files
 
